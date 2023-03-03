@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" "">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsPortal</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style src ></style>
+<link rel="stylesheet" href="styles.css">
+</head  >
+<body class="mx-auto" onload="fetchCatagories()">
+  <header>
+    <section class="mx-12 "  >
+   <!-- navbar -->
+   <div class="navbar text-black font-medium">
+    <div class="flex-1">
+      <a class="btn bg-indigo-600 text-white normal-case text-xl">News</a>
+      <a class="btn btn-ghost normal-case text-xl">Portal</a>
+    </div>
+    <div class="flex-none gap-2">
+      <div class="form-control">
+        <a class="btn btn-ghost normal-case text-xl">News </a> </div>
+       <div> <a class="btn btn-ghost normal-case text-xl">Blog</a></div>
+     
+      <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img src="/images/Avatar.png" />
+          </div>
+        </label>
+        <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact text-black dropdown-content bg-red-700 rounded-box w-52">
+          <li>
+            <a class="justify-between">
+              Profile
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Settings</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="divider  "></div> 
+  
+    </section>
+
+    <section  class=" flex justify-between text-black  font-medium mx-12 catagories-container" id="categories"> 
+
+    </section>
+  </header>
+
+  <main>
+    <section class="mx-10 mt-5" >
+      <div class="alert bg-slate-200 text-black font-medium shadow-lg">
+        <div>
+         
+          <p> <span id="news-count">0</span> Items found for category   <span id="category-name"></span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- sorting option section -->
+
+
+    
+  </main>
+    
+   <script src="script.js"></script> 
+</body>
+</html>
